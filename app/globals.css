@@ -306,7 +306,9 @@ a {
   .search_input{
     max-width:88px
   }
-  
+  .search{
+    padding-left : 0px
+  }
 }
 .slider_img{
   object-fit: cover
