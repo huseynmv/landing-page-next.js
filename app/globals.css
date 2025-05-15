@@ -298,3 +298,8 @@ a {
     max-width:90%
   }
 }
+@media(max-width: 375px){
+  .search_input{
+    max-width:107px
+  }
+}
