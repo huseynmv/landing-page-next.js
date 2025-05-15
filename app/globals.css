@@ -158,7 +158,8 @@ button{
     font-weight: 700px
   }
   .search{
-    padding-left:16px
+    padding-left:16px;
+    height:45px!important
   }
   .search_icon{
     right:12px
@@ -171,6 +172,7 @@ button{
   .filter_text{
     font-size:12px;
     font-weight: 500;
+    whitespace: nowrap
   }
   .filter_container{
     margin-top:30px;
@@ -184,8 +186,8 @@ button{
     padding-bottom: 10.5px;
   }
   .info_card_icon{
-    width: 16.45px;
-    height:11px
+    width: 15px;
+    height:13px
   }
   .info_card_icon_container{
     width:25px !important;
@@ -301,7 +303,7 @@ button{
     padding-left:13px;
   }
 
-  
+
   .product_card_icon{
     width:11px;
     height:11px
@@ -358,6 +360,9 @@ button{
   }
 }
 @media(max-width: 375px){
+    .filter_text{
+    whitespace: wrap
+  }
   .catalog{
     width:40%
   }
