@@ -172,7 +172,7 @@ button{
   .filter_text{
     font-size:12px;
     font-weight: 500;
-    whitespace: nowrap
+    white-space: nowrap
   }
   .filter_container{
     margin-top:30px;
@@ -360,8 +360,9 @@ button{
   }
 }
 @media(max-width: 375px){
-    .filter_text{
-    whitespace: wrap
+  .filter_text{
+    
+    white-space: wrap
   }
   .catalog{
     width:40%
