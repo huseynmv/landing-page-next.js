@@ -340,6 +340,12 @@ button{
     min-width: 105px !important;
     justify-content: center
   }
+  .product_price{
+    margin-right:4px
+  }
+  .product_discounted_price{
+    margin-right:4px
+  }
 }
 @media(max-width: 400px){
   .search_input{
