@@ -74,6 +74,47 @@ a {
 .dark .line-color{
   background-color:rgba(255, 255, 255, 0.5) ;
 }
+imput{
+  all: unset
+}
+
+.add_card_container:hover {
+  background-color: #EA2427;
+  cursor: pointer
+}
+
+.add_card_container:hover .product_card_icon {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+
+.add_card_container:hover .add_card_button {
+  color: #ffffff;
+  /* opacity: 0.6; */
+}
+
+/* .compare_icon {
+  transition: filter 0.3s ease;
+} */
+button{
+  user-select: none
+}
+.compare_button:hover {
+  background-color: #EA2427;
+  cursor: pointer
+}
+
+.compare_button:hover .compare_icon {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+ .left_arrow img{
+    height:25px !important;
+    width:25px !important
+  }
+ .right_arrow img{
+    height:25px !important;
+    width:25px !important
+  }
 
 
 /* MEDIA QUERIES */
@@ -132,7 +173,9 @@ a {
     font-weight: 500;
   }
   .filter_container{
-    margin-top:30px
+    margin-top:30px;
+    padding-right:0px;
+
   }
   .filter{
     padding-right:16px;
@@ -164,12 +207,20 @@ a {
     gap:16px
   }
   .left_arrow{
-    padding:11px;
-    left:-18px
+    padding:8px !important;
+    left:-14px !important;
+  }
+  .left_arrow img{
+        height: 14px !important;
+    width:14px !important;
   }
   .right_arrow{
-    padding:11px;
-    right:-18px;
+    padding:8px !important;
+    right:-14px !important;
+  }
+  .right_arrow img{
+        height: 14px !important;
+    width:14px !important
   }
   .input_wrapper{
     width:46%
@@ -304,7 +355,7 @@ a {
 }
 @media(max-width: 375px){
   .search_input{
-    max-width:88px
+    max-width:40px !important
   }
   .search{
     padding-left : 0px

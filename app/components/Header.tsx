@@ -38,7 +38,7 @@ export default function Header() {
             name=""
             id=""
             placeholder="Məhsul axtar..."
-            className="relative font-[400] text-[16px] text-primary leading-[20px] opacity-50 search_input"
+            className="relative font-[400] text-[16px] text-primary leading-[20px] opacity-50 search_input outline-hidden"
           />
           <Image
             src={search}
@@ -56,33 +56,33 @@ export default function Header() {
             name=""
             id=""
             placeholder="Sumqayıt şəhəri"
-            className="relative font-[400] text-[16px] text-primary leading-[20px] opacity-50"
+            className="relative font-[400] text-[16px] text-primary leading-[20px] opacity-50 outline-hidden"
           />
           <Image
             src={language}
             width={10}
             height={5}
             alt=""
-            className="absolute right-[24px]"
+            className="absolute right-[24px] "
           />
         </div>
       </div>
       <div className="flex items-center gap-[8px] header_icons">
         <div className="p-[12.5] rounded-[12px] nav-bg dark:nav-bg">
-          <Image src={scales} alt="" width={25} height={25} color="red" />
+          <Image src={scales} alt="" width={25} height={25} color="red" className="dark:invert dark:brightness-0 dark:contrast-100" />
         </div>
         <div className="relative p-[12.5px] rounded-[12px] nav-bg dark:nav-bg">
-          <Image src={cart} alt="Cart" width={25} height={25} className="" />
+          <Image src={cart} alt="Cart" width={25} height={25} className="dark:invert dark:brightness-0 dark:contrast-100"  />
           <span className="absolute -top-[4px] text-[#fff] text-[10px] font-[800] -right-[7px] px-[5px] py-[2px] rounded-[18px] bg-[#EA2427] leading-none">
             4+
           </span>
         </div>
 
         <div className="p-[12.5] rounded-[12px] nav-bg dark:nav-bg">
-          <Image src={heart} alt="" width={25} height={25} className="" />
+          <Image src={heart} alt="" width={25} height={25} className="dark:invert dark:brightness-0 dark:contrast-100" />
         </div>
         <div className="p-[12.5] rounded-[12px] nav-bg dark:nav-bg">
-          <Image src={user} alt="" width={25} height={25} className="" />
+          <Image src={user} alt="" width={25} height={25} className="dark:invert dark:brightness-0 dark:contrast-100" />
         </div>
       </div>
     </div>

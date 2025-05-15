@@ -44,7 +44,7 @@ export default function Navbar() {
           width={20}
           height={11}
           alt=""
-          className="lg:hidden"
+          className="lg:hidden dark:invert"
         />
         <div className="flex gap-[26px] items-center">
           <Link
@@ -61,7 +61,7 @@ export default function Navbar() {
                   Aze
                 </p>
               </Link>
-              <Image width={8} height={3.5} alt="img" src={language} />
+              <Image width={8} height={3.5} alt="img" src={language} className="dark:invert"/>
             </div>
             <ThemeToggle></ThemeToggle>
           </div>

@@ -19,7 +19,8 @@ export default function InfoCards({ data }: InfoCardsProps) {
               alt={item.title}
               width={29}
               height={29}
-              className="info_card_icon"
+              className="info_card_icon dark:invert dark:brightness-0 dark:contrast-100"
+              
             />
           </div>
           <p className="font-[700] text-[24px] text-secondary dark:text-secondary leading-[33.47px] info_card_title mt-[27px]">

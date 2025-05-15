@@ -7,6 +7,8 @@ import chat from "../../public/icons/Chat.svg";
 import scales from "../../public/icons/scales_1.svg";
 import raiting from "../../public/icons/raiting.svg";
 import type { ProductProps } from "../types/products";
+import heart from "../../public/icons/Heart.svg";
+import cart from "../../public/icons/Cart.svg";
 
 export default function ProductGrid({ data }: ProductProps) {
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
@@ -16,9 +18,10 @@ export default function ProductGrid({ data }: ProductProps) {
 
   return (
     <div className="mt-[95px] product_wrapper">
-      <p className="font-[400] text-[14px] text-[#EA2427] leading-[17px]">
+      <p className="font-[400] text-[14px] leading-[17px] text-[#EA2427] dark:text-white dark:opacity-60">
         Özəl təkliflər
       </p>
+
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mt-[4px]">
         <div>
           <p className="font-[700] text-[24px] text-primary leading-[29px] title_text">
@@ -100,6 +103,7 @@ export default function ProductGrid({ data }: ProductProps) {
                       width={10}
                       height={10}
                       style={{ opacity: 0.5 }}
+                      className="dark:invert dark:brightness-0 dark:contrast-100"
                     />
                   </div>
                 </div>
@@ -107,7 +111,13 @@ export default function ProductGrid({ data }: ProductProps) {
                   <p className="font-[700] text-[20px] text-primary leading-[22px] product_discounted_price">
                     {product.discounted_price}
                   </p>
-                  <Image src={manat} alt="" width={10} height={10} />
+                  <Image
+                    src={manat}
+                    alt=""
+                    width={10}
+                    height={10}
+                    className="dark:invert dark:brightness-0 dark:contrast-100"
+                  />
                 </div>
               </div>
               <div className="w-[1px] bg-[#DEDEDE]"></div>
@@ -119,33 +129,39 @@ export default function ProductGrid({ data }: ProductProps) {
                   <p className="font-[700] text-[20px] text-primary leading-[22px] product_discounted_price">
                     {product.perMonth.price}
                   </p>
-                  <Image src={manat} alt="" width={10} height={10} />
+                  <Image
+                    src={manat}
+                    alt=""
+                    width={10}
+                    height={10}
+                    className="dark:invert dark:brightness-0 dark:contrast-100"
+                  />
                 </div>
               </div>
             </div>
             <div className="w-full flex items-center justify-between pb-[20px] pt-[22px] add_card_wrapper">
-              <div className="flex items-center rounded-[12px] btn-bg dark:btn-bg py-[12.5px] pl-[14px] pr-[6px] add_card_container">
+              <div className="flex items-center rounded-[12px] btn-bg dark:btn-bg py-[12.5px] pl-[14px] pr-[6px] add_card_container ">
                 <Image
-                  src={scales}
+                  src={cart}
                   alt=""
-                  width={15}
-                  height={18}
-                  className="product_card_icon"
+                  width={15.42}
+                  height={17.7}
+                  className="product_card_icon dark:invert dark:brightness-0 dark:contrast-100 h-[17.7px]"
                 />
-                <p className="font-[500] text-[14px] text-primary dark:text-primary leading-[20px] px-[32px] add_card_button block sm:hidden">
+                <p className="font-[500] text-[14px] text-primary dark:text-primary leading-[20px] px-[32px] add_card_button block sm:hidden ">
                   Səbətə at
                 </p>
-                <p className="font-[500] text-[14px] text-primary dark:text-primary leading-[20px] px-[32px] add_card_button hidden sm:block">
+                <p className="font-[500] text-[14px] text-primary dark:text-primary leading-[20px] px-[32px] add_card_button hidden sm:block ">
                   Səbətə əlavə et
                 </p>
               </div>
-              <div className="btn-bg dark:btn-bg p-[12.5px] rounded-[12px] flex items-center justify-center compare_button">
+              <div className="btn-bg dark:btn-bg p-[12.5px] rounded-[12px] flex items-center justify-center compare_button ">
                 <Image
-                  src={scales}
+                  src={heart}
                   alt=""
                   width={20}
                   height={20}
-                  className="compare_icon"
+                  className="compare_icon dark:invert dark:brightness-0 dark:contrast-100 "
                 />
               </div>
             </div>

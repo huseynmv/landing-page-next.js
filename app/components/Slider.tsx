@@ -60,13 +60,13 @@ export default function Slider({ data }: SliderProps) {
         ))}
       </Swiper>
       <div
-        className="left_arrow px-[17px] py-[19px] rounded-[12px] bg-[#fff] custom-prev cursor-pointer absolute top-1/2 left-[-25px] -translate-y-1/2 z-10"
+        className="left_arrow px-[12.5px] py-[12.5px] rounded-[12px] bg-[#fff] custom-prev cursor-pointer absolute top-1/2 left-[-25px] -translate-y-1/2 z-10"
         style={{ boxShadow: "0px 5px 15px 0px rgba(0, 0, 0, 0.1)" }}
       >
         <Image src={ArrowLeft} alt="Previous" width={15} height={12} />
       </div>
       <div
-        className="right_arrow px-[17px] py-[19px] rounded-[12px] bg-[#fff] custom-next cursor-pointer absolute top-1/2 right-[-25px] -translate-y-1/2 z-10"
+        className="right_arrow px-[12.5px] py-[12.5px] rounded-[12px] bg-[#fff] custom-next cursor-pointer absolute top-1/2 right-[-25px] -translate-y-1/2 z-10"
         style={{ boxShadow: "0px 5px 15px 0px rgba(0, 0, 0, 0.1)" }}
       >
         <Image src={ArrowRight} alt="Next" width={15} height={12} />
