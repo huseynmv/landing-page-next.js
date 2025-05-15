@@ -354,11 +354,15 @@ button{
   }
 }
 @media(max-width: 375px){
+  .catalog{
+    width:40%
+  }
   .search_input{
     max-width:40px !important
   }
   .search{
-    padding-left : 0px
+    padding-left : 0px;
+    max-width: 100px !important
   }
 }
 .slider_img{
