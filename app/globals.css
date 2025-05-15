@@ -297,7 +297,8 @@ button{
   .add_card_container{
     padding:7px;
     gap:3px;
-    padding-right:11px !important
+    padding-right:20px !important;
+    padding-left:13px;
   }
   .product_card_icon{
     width:11px;
@@ -315,7 +316,8 @@ button{
   }
   .product_grid_wrapper{
     row-gap:40px;
-    margin-top:38px
+    margin-top:38px;
+    column-gap: 15px !important
   }
   .nav_wrapper{
     padding-left:18px;
