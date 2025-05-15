@@ -1,0 +1,41 @@
+@layer components {
+  .text-primary {
+    @apply text-[#3F3F3F];
+  }
+  .text-secondary {
+    @apply text-[#333333];
+  }
+  .bg-color {
+    @apply bg-[#ffffff];
+  }
+  .nav-bg{
+    @apply bg-[#f5f5f5];    
+  }
+  .icon-bg{
+    @apply bg-[#E1E1E1];
+  }
+  .btn-bg{
+    @apply bg-[#E1E1E1];
+  }
+
+
+  /* Dark mode */
+
+
+  .dark .text-primary {
+    @apply text-[#FFFFFF];
+  }
+  .dark .bg-color {
+    @apply bg-[#1A1A1A];
+  }
+  .dark .nav-bg{
+    @apply bg-[#2B2B2B];
+  }
+  .dark .text-secondary {
+    @apply text-[#FFFFFF];
+  }
+  .dark .btn-bg{
+    @apply bg-[#3f3f3f];
+  }
+  
+}
