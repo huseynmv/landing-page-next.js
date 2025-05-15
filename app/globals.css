@@ -279,6 +279,10 @@ a {
   .slider_img{
     min-height: 188px !important
   }
+  .catalog{
+    min-width: 105px !important;
+    justify-content: center
+  }
 }
 @media(max-width: 400px){
   .search_input{
@@ -302,4 +306,8 @@ a {
   .search_input{
     max-width:107px
   }
+  
+}
+.slider_img{
+  object-fit: cover
 }
